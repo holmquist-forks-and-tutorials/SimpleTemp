@@ -13,11 +13,12 @@ $(document).ready(function(){
 
             let tempRound = Math.round(data.main.temp) + "&#176;" + " F";
             let tempConvert = parseFloat(tempRound);
-            document.getElementById("tempConvert").innerHTML = ((tempConvert-32) / 1.8).toFixed(2) + "&#176;" + " C";
+            let convertDisplay = ((tempConvert-32) / 1.8).toFixed(2) + "&#176;" + " C";
 
 
             $("#city").html(data.name);
             $("#temp").html(tempRound);
+            $("#tempConvert").html(convertDisplay)
         });
 
     };
