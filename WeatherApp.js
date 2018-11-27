@@ -11,8 +11,10 @@ $(document).ready(function(){
 
         $.get("http://api.openweathermap.org/data/2.5/weather?zip="+zip+",us&units=imperial&appid=7cc4953c245c90023cf3b1cea6b0eb42", function(data){
 
-            let tempRound = Math.round(data.main.temp) + "&#8457;";
-            
+            let tempRound = Math.round(data.main.temp) + "&#176;" + " F";
+            let tempConvert = parseFloat(tempRound);
+            document.getElementById("tempConvert").innerHTML = ((tempConvert-32) / 1.8).toFixed(2) + "&#176;" + " C";
+
 
             $("#city").html(data.name);
             $("#temp").html(tempRound);
