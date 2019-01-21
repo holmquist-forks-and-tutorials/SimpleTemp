@@ -9,11 +9,11 @@ $(document).ready(function(){
 
   function getWeather(zip) {
 
-        $.get("http://api.openweathermap.org/data/2.5/weather?zip="+zip+",us&units=imperial&appid=7cc4953c245c90023cf3b1cea6b0eb42", function(data){
+        $.get("http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&units=imperial&appid=7cc4953c245c90023cf3b1cea6b0eb42", function(data) {
 
             let tempRound = Math.round(data.main.temp) + "&#176;" + " F";
             let tempConvert = parseFloat(tempRound);
-            let convertDisplay = ((tempConvert-32) / 1.8).toFixed(2) + "&#176;" + " C";
+            let convertDisplay = ((tempConvert-32) / 1.8).toFixed(0) + "&#176;" + " C";
 
 
             $("#city").html(data.name);
