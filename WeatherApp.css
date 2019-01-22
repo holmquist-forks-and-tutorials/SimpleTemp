@@ -2,17 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-#weather-container {
+.weather-container {
 
-    padding: 10px;
-    background-color: darkgoldenrod;
+    padding: 30px;
+    /*background-color: blue;*/
+    backgroud-image: linear-gradient(to right, azure, aquamarine);
 }
 
 #weather-city {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     background-color: beige
 }
 
@@ -28,4 +29,6 @@
     text-align: center;
     font-family: 'Slabo 27px', serif;
     font-size: 7.5vw;
+    background-color: aquamarine;
+
 }
