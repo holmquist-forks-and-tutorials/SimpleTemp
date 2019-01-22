@@ -21,7 +21,6 @@
     text-align:center;
     font-family: 'Slabo 27px', serif;
     font-size: 15vw;
-    background-color: azure
 }
 
 .weather-temp-c {
@@ -29,6 +28,5 @@
     text-align: center;
     font-family: 'Slabo 27px', serif;
     font-size: 7.5vw;
-    background-color: aquamarine;
 
 }
